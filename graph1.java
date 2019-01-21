@@ -16,7 +16,7 @@ class graph1 {
 	//constructor for the graph
 	public graph1(int v) {
 		nodeNum = v;
-		adj = new LinkedList[v];
+		LinkedList<Integer> adj = new LinkedList<Integer>[v];
 		for (int i = 0; i < v; i++) {
 			adj[i] = new LinkedList();
 		}
