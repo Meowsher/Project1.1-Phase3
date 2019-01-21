@@ -16,9 +16,9 @@ class graph1 {
 	//constructor for the graph
 	public graph1(int v) {
 		nodeNum = v;
-		LinkedList<Integer> adj = new LinkedList<Integer>[v];
+		@SuppressWarnings("unchecked") LinkedList adj = new LinkedList[v];
 		for (int i = 0; i < v; i++) {
-			adj[i] = new LinkedList();
+		@SuppressWarnings("unchecked")	adj[i] = new LinkedList();
 		}
 	}
 	
